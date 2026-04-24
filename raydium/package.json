@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc &&  pm2 start dist/index.js",
-    "dev": "tsc && node dist/index.js --no-warnings",
+    "start": "node api.js && tsc &&  pm2 start dist/index.js",
+    "dev": "node api.js && tsc && node dist/index.js --no-warnings",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
